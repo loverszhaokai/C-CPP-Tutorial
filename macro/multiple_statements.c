@@ -31,7 +31,7 @@ void test_long_macro_do_while()
 }
 
 // Use block only
-// It will failed to compile
+// It will failed to compile with the error: ‘else’ without a previous ‘if’
 void test_long_macro_block()
 {
 	if (1) 
@@ -39,8 +39,6 @@ void test_long_macro_block()
 	else 
 		printf("else\n");
 }
-
-
 
 /*
  * After expend the macro, it is easy to find the error
