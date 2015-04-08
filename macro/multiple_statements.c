@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// GOOD
 #define LONG_FUN_DO_WHILE(a1, a2)			\
 	do {						\
 		printf("a1 is:%d\n", a1);		\
@@ -10,7 +11,7 @@
 			printf("a1 is zero\n");		\
 	} while (0)
 
-
+// BAD
 #define LONG_FUN_BLOCK(a1, a2)				\
 	{						\
 		printf("a1 is:%d\n", a1);		\
